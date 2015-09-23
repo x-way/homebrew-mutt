@@ -48,7 +48,7 @@ class Mutt < Formula
   if build.with? "trash-patch"
     patch do
       url "https://blog.x-way.org/stuff/mutt-1.5.24-trash_folder.diff"
-      sha256 "fe4037ffc4ec0cdc5f92ae8a79da37e73514b7c45f15dc4f34495d9d9549c903"
+      sha256 "985d7f6ae17e15e525b19e348b3a43e78177cea3b775434abcbe7d220bebe934"
     end
   end
 
