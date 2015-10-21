@@ -1,6 +1,8 @@
 # homebrew-mutt
 
-This tap contains the mutt 1.5.24 formula with updated versions of patches no longer included in the official homebrew repository (currently only the trash_folder patch).
+This tap contains the mutt 1.5.24 formula with updated versions of patches no longer included in the official homebrew repository:
+- trash_folder patch
+- indexcolor patch
 
 ## How do I install this formula?
 

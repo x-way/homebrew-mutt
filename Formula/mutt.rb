@@ -33,6 +33,7 @@ class Mutt < Formula
 
   option "with-debug", "Build with debug option enabled"
   option "with-trash-patch", "Apply trash folder patch"
+  option "with-indexcolor-patch", "Apply indexcolor patch"
   option "with-s-lang", "Build against slang instead of ncurses"
   option "with-ignore-thread-patch", "Apply ignore-thread patch"
   option "with-confirm-attachment-patch", "Apply confirm attachment patch"
@@ -49,6 +50,13 @@ class Mutt < Formula
     patch do
       url "https://blog.x-way.org/stuff/mutt-1.5.24-trash_folder.diff"
       sha256 "985d7f6ae17e15e525b19e348b3a43e78177cea3b775434abcbe7d220bebe934"
+    end
+  end
+
+  if build.with? "indexcolor-patch"
+    patch do
+      url "https://blog.x-way.org/stuff/mutt-1.5.24-indexcolor.diff"
+      sha256 "96c3ab28e0cb03646fbb0357650628591efabb102596978d1b05960d0e511f33"
     end
   end
 
